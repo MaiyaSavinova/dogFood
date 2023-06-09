@@ -1,24 +1,23 @@
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
-ul{
-    list-style-type: none;
+ul {
     padding: 0;
+    list-style-type: none;
+    
 }
-.menu{
-    padding: 0;
-    list-style-type: none;
+.menu {
     display: flex;
     gap: 10px;
 }
-.menu>li{
+.menu>li {
     position: relative;
 }
-menu>li:hover>ul{
-visibility: visible;
+.menu>li:hover>ul {
+    visibility: visible;
 }
-.menu ul{
+.menu ul {
     position: absolute;
     z-index: 1;
     background-color: white;

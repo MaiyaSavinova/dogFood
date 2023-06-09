@@ -10,18 +10,20 @@ import {
     Profile,
     SingleProduct
 } from "./pages"
+
 function App() {
   return  <>
     <ul className="menu">
       <li><Link to="/">Главная</Link></li>
-      <li><Link to="/products">Каталог</Link></li>
+      <li><Link to="/products">Каталог</Link>
         <ul>
           <li><Link to="/products/category/delicious">Лакомства</Link></li>
           <li><Link to="/products/category/toys">Игрушки</Link></li>
           <li><Link to="/products/favorites">Любимые товары</Link></li>
         </ul>
-      <li><Link to="/products/ball">Мячик для собак</Link></li>
-      <li><Link to="/products/add/">Добавить</Link></li>
+      </li>
+      <li><Link to="/product/ball">Мячик для собак</Link></li>
+      <li><Link to="/product/add/">Добавить</Link></li>
       <li><Link to="/basket">Корзина</Link></li>
       <li><Link to="/profile">Личный кабинет</Link></li>
       <li><Link to="/auth">Войти</Link></li>
