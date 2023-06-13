@@ -4,3 +4,13 @@ https://create-react-app.dev/
 Запустить проект на GithubPages
 
 https://create-react-app.dev/docs/deployment/
+
+Бесплатные картинки в формате jpg (фотки).
+при использовании не забыть добавить ссылку на сам сайт в футер например.
+https://unsplash.com/ 
+
+Картинки 10 картинок в день(лицензия).
+https://ru.freepik.com/pricing
+
+Иконки png  c регистрацией 50 картинок в день, без - 10(лицензия)
+https://www.flaticon.com/pricing

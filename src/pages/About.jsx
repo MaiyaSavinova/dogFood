@@ -1,6 +1,8 @@
-function About () {
-    return<>
-    <h1>О магазине</h1>
+import Layout from "../components/Layout";
+
+function About() {
+    return <>
+        <h1>О магазине</h1>
     </>
- }
- export {About};
+}
+export { About };

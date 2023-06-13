@@ -1,11 +1,13 @@
 import Layout from "../components/Layout";
+//import Card from "../components/card";
+import Banner from "../components/Banner";
+
+
+import bannersData from "../assets/data/banners.json";
 
 function Home() {
    return <>
-      <h1>Главная страница</h1>
-      <Layout mb={3} dt={1} gap="small" />
-      <Layout mb={4} dt={4} gap="none" />
-      <Layout mb={2} dt={3} />
+         <Banner {...bannersData[1]}/>
    </>
 }
 export { Home };

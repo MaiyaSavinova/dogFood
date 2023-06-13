@@ -1,6 +1,8 @@
-function Basket () {
-    return<>
-    <h1>Корзина</h1>
+function Basket() {
+    return <>
+ 
+            <h1>Корзина</h1>
+    
     </>
- }
- export {Basket};
+}
+export { Basket };
