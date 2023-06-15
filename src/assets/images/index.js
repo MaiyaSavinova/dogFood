@@ -1,4 +1,4 @@
 import Banners from "./banners";
-import Pug from "./pug";
+import Stick from "./dogstick";
 
-export { Banners, Pug };
+export { Banners, Stick };

@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 import Banner from "../components/Banner";
-import Adds from "./component/Adds";
+import Adds from "./components/Adds";
 
 import bannersData from "../assets/data/banners.json";
 import addsData from "./assets/data/adds.json";
