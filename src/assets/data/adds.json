@@ -20,12 +20,13 @@
     {
         "name": "Игрушки",
         "tag": "toys",
-        "img": "toys-bone",
+        "img": "toys_bone",
         "text": "Мопс Теди счастлив с нашими игрушками! Порадуй и ты своего питомца!"
     },
     {
         "name": "Аксессуары",
         "tag": "accessories",
-        "img": "accessories-bowl"
+        "img": "accessories_bowl",
+        "text": "Лучшее для вашего питомца! "
     }
 ]

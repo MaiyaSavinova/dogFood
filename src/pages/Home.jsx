@@ -1,12 +1,12 @@
 import Layout from "../components/Layout";
 import Banner from "../components/Banner";
-import Adds from "./components/Adds";
+import Adds from "../components/Adds";
 
 import bannersData from "../assets/data/banners.json";
-import addsData from "./assets/data/adds.json";
+import addsData from "../assets/data/adds.json";
 
 
-function Home() {
+export function Home() {
       return <>
             <Banner {...bannersData[1]} />
             <Layout>
@@ -19,4 +19,3 @@ function Home() {
 
       </>
 }
-export { Home };

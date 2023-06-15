@@ -1,4 +1,4 @@
 import Banners from "./banners";
-import Stick from "./dogstick";
+import Stick from "./dstick";
 
 export { Banners, Stick };
