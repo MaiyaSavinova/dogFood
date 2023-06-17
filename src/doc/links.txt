@@ -14,3 +14,11 @@ https://ru.freepik.com/pricing
 
 Иконки png  c регистрацией 50 картинок в день, без - 10(лицензия)
 https://www.flaticon.com/pricing
+
+Новости
+https://newsapi.org/
+    Что можно посмотреть:
+        Techinsider.ru
+        Life.ru
+        Picabu
+        Lenta.ru
