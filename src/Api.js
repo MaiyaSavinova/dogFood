@@ -44,7 +44,7 @@ class Api {
         })
             .then(res => this.checkRes(res))
     }
-    forgotPed(body) {
+    forgotPwd(body) {
         return fetch(`${this.path}/forgot-password`, {
             method: "POST",
             headers: this.setHeaders(true, false),
@@ -52,29 +52,29 @@ class Api {
         })
             .then(res => this.checkRes(res))
     }
-    forgotPwd(body) {
+    resetPwd(body) {
         return fetch(`${this.path}/password-reset/${body.token}`, {
             method: "PATCH",
             headers: this.setHeaders(true, false),
-            body: this.setBody({ password: body.password })
+            body: this.setBody({password: body.password})
         })
             .then(res => this.checkRes(res))
     }
     getProducts() {
         return fetch(`${this.path}/products`, {
-            headers: this.setHeaders(),
+            headers: this.setHeaders()
         })
             .then(res => this.checkRes(res))
     }
-    setProducts(query) {
-        return fetch(`${this.path}/products/search?query=\${query}`, {
-            headers: this.setHeaders(),
+    searchProducts(query) {
+        return fetch(`${this.path}/products/search?query=${query}`, {
+            headers: this.setHeaders()
         })
             .then(res => this.checkRes(res))
     }
     getProduct(id) {
         return fetch(`${this.path}/products/${id}`, {
-            headers: this.setHeaders(),
+            headers: this.setHeaders()
         })
             .then(res => this.checkRes(res))
     }
@@ -97,53 +97,53 @@ class Api {
     delProduct(id) {
         return fetch(`${this.path}/products/${id}`, {
             method: "DELETE",
-            headers: this.setHeaders(true)
+            headers: this.setHeaders()
         })
             .then(res => this.checkRes(res))
     }
     setLike(id, isLike) {
         return fetch(`${this.path}/products/likes/${id}`, {
             method: isLike ? "PUT" : "DELETE",
-            headers: this.setHeaders(true)
+            headers: this.setHeaders()
         })
             .then(res => this.checkRes(res))
     }
     getAllReviews() {
-        return fetch(`${this.path}/products/rewiew`, {
-            headers: this.setHeaders(),
+        return fetch(`${this.path}/products/review`, {
+            headers: this.setHeaders()
         })
             .then(res => this.checkRes(res))
     }
     getReviews(id) {
-        return fetch(`${this.path}/products/rewiew/${id}`, {
-            headers: this.setHeaders(),
+        return fetch(`${this.path}/products/review/${id}`, {
+            headers: this.setHeaders()
         })
             .then(res => this.checkRes(res))
     }
-    addReviews(id, body) {
-        return fetch(`${this.path}/products/rewiew/${id}`, {
+    addReview(id, body) {
+        return fetch(`${this.path}/products/review/${id}`, {
             method: "POST",
             headers: this.setHeaders(true),
             body: this.setBody(body)
         })
             .then(res => this.checkRes(res))
     }
-    delReviews(id, reviewId) {
-        return fetch(`${this.path}/products/rewiew/${id}/${reviewId}`, {
+    delReview(id, reviewId) {
+        return fetch(`${this.path}/products/review/${id}/${reviewId}`, {
             method: "DELETE",
-            headers: this.setHeaders(true),
+            headers: this.setHeaders(),
         })
             .then(res => this.checkRes(res))
     }
     getAllUsers() {
         return fetch(`${this.path}/users`, {
-            headers: this.setHeaders(),
+            headers: this.setHeaders()
         })
             .then(res => this.checkRes(res))
     }
-    getUsers(id) {
+    getUser(id) {
         return fetch(`${this.path}/users/${id}`, {
-            headers: this.setHeaders(),
+            headers: this.setHeaders()
         })
             .then(res => this.checkRes(res))
     }
@@ -157,4 +157,4 @@ class Api {
     }
 }
 
-export default Api
+export default Api;
