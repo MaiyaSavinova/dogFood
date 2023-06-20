@@ -13,40 +13,30 @@ import {
 } from "./pages"
 
 import Main from "./context/main";
-
+import Api from "./Api";
 
 import Layout from "./components/Layout";
 
 
 function App() {
-  const [news, setNews] = useState([]);
-  const [newsLenta, setNewsLenta] = useState([]);
-
-  useEffect(() => {
-    fetch(`https://newsapi.org/v2/everything?q=собаки&apiKey=${process.env.REACT_APP_NEWS_KEY}`)
-
-      .then(res => res.json())
-      .then(data => {
-        console.log(data);
-        setNews(data.articles.filter(el => el.source.name === "Techinsider.ru"));
-      })
-
-     fetch(`https://newsapi.org/v2/everything?q=собаки&sources=lenta&apiKey=${process.env.REACT_APP_NEWS_KEY}`)
-
-      .then(res => res.json())
-      .then(data => {
-        console.log(data);
-        setNewsLenta(data.articles);
-      })
-
-  }, []);
+  const [token, setToken] = useState(localStorage.getItem("user-token"));
+  const [userId, setUserId] = useState(localStorage.getItem("user-id"));
+  const [api, setApi] = useState(new Api(token));
   
+  useEffect(() => {
+    setApi(new Api(token))
+}, [token])
 
-  const mainCtx = {
-    news,
-    newsLenta
-  }
+useEffect(() => {
+    setToken(localStorage.getItem("user-token"))
+}, [userId])
 
+const mainCtx = {
+    api,
+    userId,
+    setUserId
+}
+  
   return <Main.Provider value={mainCtx}>
     <Layout>
       <ul className="menu">
@@ -66,7 +56,6 @@ function App() {
         <li><Link to="/delivery">Доставка</Link></li>
         <li><Link to="/about">О нас</Link></li>
       </ul>
-      <span>{process.env.REACT_APP_USER_NAME}</span>
     </Layout>
     <Routes>
       <Route path="/" element={<Home />} />

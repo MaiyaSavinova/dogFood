@@ -22,3 +22,27 @@ https://newsapi.org/
         Life.ru
         Picabu
         Lenta.ru
+
+
+APi
+Лакомства
+https://www.petshop.ru/catalog/dogs/kosti/dolgoigrayuschie_lakomstva/chicken-necks-5-pcs-/
+https://www.petshop.ru/catalog/dogs/kosti/hrustyashki/lakomstvo_dlya_sobak_delikatnoe_pischevarenie_pro_hypoallergenic_pcat236_22763/
+
+Игрушки
+https://www.petshop.ru/catalog/dogs/games/zveri_pticy/igrushka_dlya_sobak_pischaschiy_porosenok_lateks_16sm_grunting_smiling_pig_140011_20136/
+https://www.petshop.ru/catalog/dogs/games/all/dog-toy-ball-hedgehog-yellow/?oid=581936
+https://www.petshop.ru/catalog/dogs/games/kostochka/bone-for-puppies-the-aroma-of-the-beef-s/
+
+Миска
+https://www.petshop.ru/catalog/dogs/Miskdogs/miska/dvoynaya_miska_neskolzyaschaya_smarty_2_330ml_chernichnyy_double_smarty_bowl_1_non_slip_2_x_330_ml_mod_h106_331_24682_chernich/
+https://www.petshop.ru/catalog/dogs/Miskdogs/miski_na_podstavke/podstavka_2miski_nerzhaveyki_stal_0_45l_24831_miski_vhodyat_v_komplekt_5108/?oid=650936
+https://www.petshop.ru/catalog/dogs/Miskdogs/all/kovrik-pod-misku-sobachka-430-280mm-30211010/
+
+Иконки векторные
+https://www.npmjs.com/package/simple-line-icons
+https://www.npmjs.com/package/lineicons
+https://lineicons.com/icons/
+
+Нет картинки 
+<a href="https://www.flaticon.com/free-icons/image" title="image icons">Image icons created by Dreamstale - Flaticon</a>

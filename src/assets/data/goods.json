@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Smart Dog лакомства куриные шеи",
+        "price": "140",
+        "discount": "15",
+        "pictures": "https://6kcmxu3d7l.a.trbcdn.net/upload/files-new/d2/72/42/586593_400x400.jpg",
+        "tags": ["delicious"],
+        "likes": ["1", "2","3"],
+        "reviews": [
+            {"rating": 5},
+            {"rating": 4},
+            {"rating": 5},
+            {"rating": 4}
+        ],
+        "_id": "1",
+        "created_at": "2023-01-24"  
+    },
+    {
+        "name": "Tappi мяч - ежик, желтый",
+        "price": "307",
+        "discount": "20",
+        "pictures": "https://6kcmxu3d7l.a.trbcdn.net/upload/files-new/6b/8f/af/589253_400x400.jpg",
+        "tags": ["toys"],
+        "likes": ["1", "2","3","4","5","6"],
+        "reviews": [
+            {"rating": 4},
+            {"rating": 4},
+            {"rating": 3},
+            {"rating": 5}
+        ],
+        "_id": "2",
+        "created_at": "2022-12-05"  
+
+    },
+    {
+        "name": "Moderna двойная миска нескользящая Smarty",
+        "price": "337",
+        "discount": "20",
+        "pictures": "https://6kcmxu3d7l.a.trbcdn.net/upload/files-new/34/15/47/576484_400x400.jpg",
+        "tags": ["accessories"],
+        "likes": ["1","2"],
+        "reviews": [],
+        "_id": "3",
+        "created_at": "2023-04-01"  
+
+    }
+]

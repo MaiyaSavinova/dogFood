@@ -35,3 +35,26 @@ like <a href="https://www.flaticon.com/free-stickers/dog" title="dog stickers">D
 <a href="https://ru.freepik.com/free-vector/paw-print-per-trace-on-splatter-background_23194185.htm#page=3&query=patterndog&position=35&from_view=search&track=ais?sign-up=email">Изображение от starline</a> на Freepik
 <a href="https://ru.freepik.com/free-vector/pattern-on-show-cats_16160900.htm#page=2&query=pattern%20dog&position=4&from_view=search&track=ais">Изображение от valadzionak_volha</a> на Freepik
 
+Элементы формы:
+    Пользователь:
+        name - text
+        about - textarea
+        avatar - link
+        email - email
+        password - password
+    Товар:
+        name - text
+        price - number
+        discount - select
+        stock - number
+        available ? isPublished - checkbox
+        wight - text
+        description - textarea
+        pictures - link
+    Отзыв:
+        name - text
+        city - text
+        text - textarea
+        rating - number
+    Поиск:
+        text / search
