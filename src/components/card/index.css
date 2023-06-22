@@ -1,13 +1,13 @@
 .card {
-    /*background-color: silver;*/
+    background-color: white;
     border: 1px solid silver;
     border-radius: 1rem;
     overflow: hidden;
 }
 .card__img {
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: block;
-    height: 100px;
+    height: 180px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -17,17 +17,20 @@
     display: grid;
     flex-direction: column;
     gap: 1rem;
-    padding: 2 rem;
+    margin: 3rem;
 }
 .card__title {
     height: calc(4rem * 1.2);
     overflow: hidden;
+    font-weight: bold;
+    font-size: 2rem;
 }
 .card__info {
     display: flex;
     gap: 1rem;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 2rem;
+    padding: 3 rem;
 }
 .card__rate {
     display: flex;
@@ -46,11 +49,6 @@
     display: flex;
     align-items: baseline;
     gap: 1rem;
-}
-.card__price_discount {
-    font-weight: normal;
-    font-size: 2rem;
-    color: silver;
 }
 .card__btn {
     border: none;
@@ -72,31 +70,39 @@
 }
 .card__btn_basket {
 border-radius: 1rem;
-background-color: silver;
+background-color: #FF7F50;
 flex: 1;
+color: white;
+font-weight: bold;
 
 }
 .card__tag {
     color: white;
     font-size: 2.2rem;
-    background-color: silver;
+    background-color:#FF7F50;
     width: 100%;
 }
-.card__tag_toys {
-    color: white;
-    background-color: olivedrab;
-}
-.card__tag_delicious {
-    color: white;
-    background-color: crimson;
-}
-.card__tag_accessories {
-    color: white;
-    background-color: darkslateblue;
-}
 .card .lni {
-    font-size: 1.4rem;
+    font-size: 3rem;
 }
 .card__info .lni {
-    font-size: 1rem;
+    font-size: 2rem;
 }
+@media (max-width: 320px) {
+    .card__img {
+        height: 100px;
+    }
+    .card__content {
+        margin: 1rem;
+    }
+    .card__title {
+       font-size: 2rem;
+    }
+    .card__info {
+        font-size: 1.4rem;
+
+    }
+    .card__price {
+        font-size: 2rem;
+    }
+  }

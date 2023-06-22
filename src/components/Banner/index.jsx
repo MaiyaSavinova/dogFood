@@ -5,11 +5,15 @@ import Layout from "../Layout";
 const Banner = ({
     text,
     bg,
-    title = "DogFood",
-    main = true
+    title = "Побалуй своего питомца!",
+    main = true,
+    pattern=true,
+    bgPos="center"
 }) => {
     const bannerStyle = {
-        backgroundImage: `url(${BannersImg[bg]})`
+        backgroundImage: `url(${BannersImg[bg]})`,
+        backgroundSize: pattern ? "contain" : "cover",
+        backgroundPosition: bgPos
     }
 
     return <div className="banner" style={bannerStyle}>

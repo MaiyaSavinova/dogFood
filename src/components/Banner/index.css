@@ -1,17 +1,22 @@
 .banner {
     background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
     min-height: 400px;
-    max-height: 60vh;
+    max-height: 600vh;
     display: grid;
-    align-content: flex-end;
+    align-content: flex-start;
 }
 
 .banner__caption {
-    font-size: 8rem;
+    font-size: 4rem;
+    font-family: Arial Narrow, sans-serif;
+    color: white;
 }
 .banner__text {
-    font-size: 3rem;
+    font-size: 2rem;
+    font-family: Arial Narrow, sans-serif;
+    color: white;
 }
 .banner::before {
     content: "";
@@ -26,9 +31,15 @@
 
 @media screen and (min-width: 1064px) {
     .banner__caption {
-        font-size: 16rem;
+        font-size: 5rem;
+        padding-top: 25px;
+        font-family: Arial Narrow, sans-serif;
+        color: white;
     }
     .banner__text {
-        font-size: 4rem;
+        font-size: 3rem;
+        font-family: Arial Narrow, sans-serif;
+        color: white;
+        
     }
 }

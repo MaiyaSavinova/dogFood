@@ -51,13 +51,13 @@
             "path": "/basket",
             "imgType": "icon",
             "imgPath": "lni lni-cart",
-            "visibility": "no-user"  
+            "visibility": "user"  
         },
         {
             "path": "/profile",
             "imgType": "icon",
             "imgPath": "lni lni-user",
-            "visibility": "no-user"  
+            "visibility": "user"  
         },
         {
             "title": "Войти",
@@ -76,7 +76,7 @@
           {
             "title": "Личный кабинет",
             "path": "/profile",
-            "visibility": "no-user"
+            "visibility": "user"
           },
           {
             "title": "Каталог",
@@ -86,7 +86,7 @@
           {
             "title": "Корзина",
             "path": "/basket",
-            "visibility": "no-user"
+            "visibility": "user"
           },
           {
             "title": "О магазине",
@@ -105,8 +105,8 @@
             "as": "a"
           },
           {
-            "title": "Изображение от lesyaskripak",
-            "path": "https://ru.freepik.com/free-vector/pattern-with-dog-faces_23976690.htm#query=pattern%20dog&position=25&from_view=search&track=ais",
+            "title": "Изображение от Freepik",
+            "path": "https://ru.freepik.com/free-photo/dog-holding-a-bone-and-looking-away_6146962.htm#query=%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B0%20%D0%B5%D1%81%D1%82&position=17&from_view=search&track=ais",
             "as": "a"
           },
       {
@@ -121,6 +121,18 @@
             "path": "https://github.com/LineiconsHQ/Lineicons",
             "caption": true,
             "as": "a"
+          },
+          {
+            "title": "Изображения для рекламных блоков взяты с сайта pngwing.com",
+            "path": "https://www.pngwing.com/ru",
+            "caption": true,
+            "as": "a"
+          },
+          {
+            "title": "Данные о товарах взяты из магазина petsop.ru",
+            "path": "https://www.petshop.ru/catalog/dogs/kosti/",
+            "caption": true,
+            "as": "a"
           }
         ],
         "links_3": [
@@ -131,28 +143,8 @@
             "as": "a"
           },
           {
-            "title": "Love and romance stickers created by MrHamster — Flaticon",
-            "path": "https://www.flaticon.com/free-stickers/love-and-romance",
-            "as": "a"
-          },
-          {
-            "title": "Feeding stickers created by MrHamster — Flaticon",
-            "path": "https://www.flaticon.com/free-stickers/feeding",
-            "as": "a"
-          },
-          {
-            "title": "Dog stickers created by MrHamster — Flaticon",
-            "path": "https://www.flaticon.com/free-stickers/dog",
-            "as": "a"
-          },
-          {
-            "title": "Hot-dogs stickers created by MrHamster — Flaticon",
-            "path": "https://www.flaticon.com/free-stickers/hot-dogs",
-            "as": "a"
-          },
-          {
-            "title": "Dog stickers created by MrHamster - Flaticon",
-            "path": "https://www.flaticon.com/free-stickers/dog",
+            "title": "Zoology stickers created by Stickers",
+            "path": "https://www.flaticon.com/free-stickers/zoology",
             "as": "a"
           },
           {
@@ -160,6 +152,7 @@
             "path": "https://www.flaticon.com/free-icons/image-placeholder",
             "as": "a"
           }
+         
         ]
       }
  

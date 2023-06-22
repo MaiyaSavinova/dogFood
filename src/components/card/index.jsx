@@ -63,15 +63,7 @@ const Card = ({
                 </span>
             </span>
 
-            <span className="card__price">
-                {discount > 0
-                    ? <>
-                        {Math.ceil(price * ((100 + discount) / 100))} ₽
-                        <del className="card__price_discount">{price} ₽</del>
-                    </>
-                    : price + " ₽"
-                }
-            </span>
+            <span className="card__price"> {price} ₽</span>
             <span className="card__buttons">
                 {inBasket
                     ? <button

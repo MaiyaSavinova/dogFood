@@ -1,17 +1,23 @@
 .adds {
-    background-color:silver;
+    background-color:#FF7F50;
     border-radius: 1rem;
     padding: 0 2rem;
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
 }
 .adds__text {
     flex: 1;
     display: grid;
     gap: 1rem;
-    padding: 2rem 0;
+    padding: 2rem 2rem;
     position: relative;
     z-index: 1;
+    color: white;
+    font-size: 18px;
+}
+.adds a:hover {
+color: #D2691E;
+font-weight: bold;
 }
 .adds__img {
     flex: 1;
@@ -24,12 +30,13 @@
     opacity: 0.3;
 }
 
+
 @media screen and (min-width: 1064px) {
     .adds__img {
         background-position: center;
         opacity: 1;
         position: static;
-        width: auto;
-        height: auto;
+        width: 200px;
+        height: 200px;
     }
 }

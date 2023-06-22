@@ -26,29 +26,25 @@ export function Home() {
             return new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
         });
       return <>
-            <Banner {...bannersData[1]} />
-            <Layout>
-                  <Adds {...addsData[0]}></Adds>
+            <Banner {...bannersData[1]} pattern={false} bgPos="50% 40%"/>
+            <Layout dt={3}>
+                  <Adds {...addsData[3]}></Adds>
             </Layout>
-            {newGoods.length > 0 && <Layout mb={2} dt={4} title="Новинки">
-                  {newGoods.map(el => <Card key={el._id} {...el}></Card>)}
+            {newGoods.length > 0 && <Layout dt={2} title="Новинки">
+            <Card{...goodsData[0]}></Card>
+            <Card{...goodsData[1]}></Card>
             </Layout>}
             <Layout dt={2}>
-                  <Adds {...addsData[1]}></Adds>
                   <Adds {...addsData[2]}></Adds>
-            </Layout>
-                  {favGoods.length > 0 && <Layout mb={2} dt={4} title="Популярные товары">
-                  {favGoods.map(el => <Card key={el._id} {...el}></Card>)}
-            </Layout>}
-            <Layout dt={2}>
-                  <Adds {...addsData[3]} />
                   <Adds {...addsData[4]} />
             </Layout>
-            {goodsData.length > 0 && <Layout mb={2} dt={4} title="Недавно просмотренные">
-                  {goodsData.map(el => <Card key={el._id}{...el}></Card>)}
+                  {favGoods.length > 0 && <Layout dt={2} title="Популярные товары">
+                  <Card{...goodsData[3]}></Card>
+                  <Card{...goodsData[4]}></Card>
             </Layout>}
-            <Layout>
-                  <Adds {...addsData[5]} />
+            <Layout dt={2}>
+                  <Adds {...addsData[0]} />
+                  <Adds {...addsData[1]}></Adds>
             </Layout>
 
       </>

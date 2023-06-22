@@ -25,7 +25,7 @@
     gap: 2rem;
 }
 .layout__title {
-    font-size: 6rem;
+    font-size: 5rem;
 }
 .layout__title_2 {
     grid-column: 1 / span 2;
@@ -49,23 +49,27 @@
     }
 
     .layout_dt-2 {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .layout_dt-3 {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
    .layout_dt-4 {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
     .layout__title_dt-2 {
         grid-column: 1 / span 2;
+        
     }
+     
     .layout__title_dt-3 {
         grid-column: 1 / span 3;
     }
     .layout__title_dt-4 {
         grid-column: 1 / span 4;
     }
+
+    
 }
