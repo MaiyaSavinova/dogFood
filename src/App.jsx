@@ -1,5 +1,5 @@
 import {useState, useEffect} from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import {
   About,
@@ -15,16 +15,22 @@ import {
 
 import Main from "./context/main";
 import Api from "./Api";
-import menu from "./assets/data/menu.json";
 
-import Layout from "./components/Layout";
-import Nav from "./components/Nav";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   const [token, setToken] = useState(localStorage.getItem("user-token"));
   const [userId, setUserId] = useState(localStorage.getItem("user-id"));
   const [api, setApi] = useState(new Api(token));
+  const [screen, setScreen] = useState(window.innerWidth)
 
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+        setScreen(window.innerWidth);
+    })
+}, []);
+  
   useEffect(() => {
     setApi(new Api(token))
   }, [token])
@@ -37,13 +43,13 @@ function App() {
     api,
     userId,
     setUserId,
+    screen
 
   }
 
   return <Main.Provider value={mainCtx}>
-    <Layout>
-      <Nav menu={menu.header}/>
-    </Layout>
+    <Header/>
+    <main>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
@@ -57,7 +63,8 @@ function App() {
         <Route path="/delivery" element={<Delivery />} />
         <Route path="/about" element={<About />} />
       </Routes>
-
+      </main>
+      <Footer/>
   </Main.Provider>
 
 }

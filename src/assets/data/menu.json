@@ -67,6 +67,99 @@
             "visibility": "no-user"  
         }
     ],
-    "footer": []
-  }
+    "footer": [
+        {
+            "title": "Войти",
+            "path": "/auth",
+            "visibility": "no-user"
+          },
+          {
+            "title": "Личный кабинет",
+            "path": "/profile",
+            "visibility": "no-user"
+          },
+          {
+            "title": "Каталог",
+            "path": "/products",
+            "visibility": "no-user"
+          },
+          {
+            "title": "Корзина",
+            "path": "/basket",
+            "visibility": "no-user"
+          },
+          {
+            "title": "О магазине",
+            "path": "/about"
+          },
+          {
+            "title": "Доставка и оплата",
+            "path": "/delivery"
+          }
+        ],
+        "links_1": [
+          {
+            "title": "Freepik images",
+            "path": "https://www.freepik.com",
+            "caption": true,
+            "as": "a"
+          },
+          {
+            "title": "Изображение от lesyaskripak",
+            "path": "https://ru.freepik.com/free-vector/pattern-with-dog-faces_23976690.htm#query=pattern%20dog&position=25&from_view=search&track=ais",
+            "as": "a"
+          },
+      {
+            "title": "Image by rawpixel.com",
+            "path": "https://www.freepik.com/free-vector/seamless-animal-pattern-background-cute-paw-print-vector-illustration_20266394.htm#query=pattern%20dog&position=7&from_view=search&track=ais",
+            "as": "a"
+          }
+        ],
+        "links_2":[
+          {
+            "title": "Lineicons",
+            "path": "https://github.com/LineiconsHQ/Lineicons",
+            "caption": true,
+            "as": "a"
+          }
+        ],
+        "links_3": [
+          {
+            "title": "Flaticon images",
+            "path": "https://www.flaticon.com",
+            "caption": true,
+            "as": "a"
+          },
+          {
+            "title": "Love and romance stickers created by MrHamster — Flaticon",
+            "path": "https://www.flaticon.com/free-stickers/love-and-romance",
+            "as": "a"
+          },
+          {
+            "title": "Feeding stickers created by MrHamster — Flaticon",
+            "path": "https://www.flaticon.com/free-stickers/feeding",
+            "as": "a"
+          },
+          {
+            "title": "Dog stickers created by MrHamster — Flaticon",
+            "path": "https://www.flaticon.com/free-stickers/dog",
+            "as": "a"
+          },
+          {
+            "title": "Hot-dogs stickers created by MrHamster — Flaticon",
+            "path": "https://www.flaticon.com/free-stickers/hot-dogs",
+            "as": "a"
+          },
+          {
+            "title": "Dog stickers created by MrHamster - Flaticon",
+            "path": "https://www.flaticon.com/free-stickers/dog",
+            "as": "a"
+          },
+          {
+            "title": "Image placeholder icons created by Design Circle",
+            "path": "https://www.flaticon.com/free-icons/image-placeholder",
+            "as": "a"
+          }
+        ]
+      }
  

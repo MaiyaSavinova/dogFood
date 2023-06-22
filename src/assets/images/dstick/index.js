@@ -9,7 +9,7 @@ const Stick = {
     delicious_pack: pic3,
     toys_ball: pic2,
     delicious_feed: pic4,
-    toys_bone: pic5,
+    logo: pic5,
     accessories_bowl: pic1
 }
 export default Stick;

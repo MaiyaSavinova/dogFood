@@ -1,8 +1,10 @@
+import Layout from "../components/Layout";
+
 function Basket() {
-    return <>
+    return <Layout>
  
             <h1>Корзина</h1>
     
-    </>
+    </Layout>
 }
 export { Basket };
