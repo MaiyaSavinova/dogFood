@@ -5,7 +5,7 @@ import "./index.css";
 const Layout = ({
     mb = 1,
     dt = mb,
-    gap = "normal", //none = 0; small = 2rem; normal = 4rem
+    gap = "normal", 
     title,
     children
 }) => {

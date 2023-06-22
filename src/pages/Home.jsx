@@ -3,6 +3,7 @@ import { useContext } from "react";
 import Layout from "../components/Layout";
 import Banner from "../components/Banner";
 import Adds from "../components/Adds";
+import Carousel from "../components/Carousel";
 import Card from "../components/Card";
 
 import MainCtx from "../context/main";
@@ -10,7 +11,6 @@ import MainCtx from "../context/main";
 import bannersData from "../assets/data/banners.json";
 import addsData from "../assets/data/adds.json";
 import goodsData from "../assets/data/goods.json";
-//import { Form } from "react-router-dom";
 
 
 export function Home() {
@@ -37,7 +37,7 @@ export function Home() {
                   <Adds {...addsData[1]}></Adds>
                   <Adds {...addsData[2]}></Adds>
             </Layout>
-            {favGoods.length > 0 && <Layout mb={2} dt={4} title="Популярные товары">
+                  {favGoods.length > 0 && <Layout mb={2} dt={4} title="Популярные товары">
                   {favGoods.map(el => <Card key={el._id} {...el}></Card>)}
             </Layout>}
             <Layout dt={2}>
@@ -48,7 +48,7 @@ export function Home() {
                   {goodsData.map(el => <Card key={el._id}{...el}></Card>)}
             </Layout>}
             <Layout>
-                  <Adds {...addsData[0]} />
+                  <Adds {...addsData[5]} />
             </Layout>
 
       </>

@@ -131,7 +131,7 @@ class Api {
     delReview(id, reviewId) {
         return fetch(`${this.path}/products/review/${id}/${reviewId}`, {
             method: "DELETE",
-            headers: this.setHeaders(),
+            headers: this.setHeaders()
         })
             .then(res => this.checkRes(res))
     }
