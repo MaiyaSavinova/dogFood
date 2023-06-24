@@ -38,8 +38,8 @@
                     "position": "horizontal"
                 },
                 {
-                    "title": "Аксессуары",
-                    "path": "/products/category/accessories",
+                    "title": "Одежда",
+                    "path": "/products/category/outerwear",
                     "imgType": "icon",
                     "imgPath": "lni lni-gift",
                     "position": "horizontal"
@@ -51,13 +51,13 @@
             "path": "/basket",
             "imgType": "icon",
             "imgPath": "lni lni-cart",
-            "visibility": "user"  
+            "visibility": "no-user"  
         },
         {
             "path": "/profile",
             "imgType": "icon",
             "imgPath": "lni lni-user",
-            "visibility": "user"  
+            "visibility": "no-user"  
         },
         {
             "title": "Войти",
@@ -76,7 +76,7 @@
           {
             "title": "Личный кабинет",
             "path": "/profile",
-            "visibility": "user"
+            "visibility": "no-user"
           },
           {
             "title": "Каталог",
@@ -86,7 +86,7 @@
           {
             "title": "Корзина",
             "path": "/basket",
-            "visibility": "user"
+            "visibility": "no-user"
           },
           {
             "title": "О магазине",

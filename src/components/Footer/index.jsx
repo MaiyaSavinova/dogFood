@@ -10,15 +10,15 @@ const Footer = () => {
 
     return <footer className="footer">
         <Layout dt={3}>
+            <div className="footer__menu">
+                <Nav menu={menu.footer} position="vertical"/>
+            </div>
             <div className="footer__sign">
                 <Logo position="vertical"/>
                 <div className="footer__text">
                     <span>Make by <a href="" target="_blank" rel="noreferrer"></a> width <i className="lni lni-heart"/></span>
                     <span>©{new Date().getFullYear()} All rights reserved</span>
                 </div>
-            </div>
-            <div className="footer__menu">
-                <Nav menu={menu.footer} position="vertical"/>
             </div>
             <hr className="footer__separator"/>
             <Nav menu={menu.links_1} position="vertical"/>
