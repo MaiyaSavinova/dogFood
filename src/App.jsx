@@ -26,6 +26,13 @@ function App() {
   const [screen, setScreen] = useState(window.innerWidth);
   const [products, setProducts] = useState([]);
  
+  let bStore = localStorage.getItem("rockBasket");
+  if (bStore) {
+      bStore = JSON.parse(bStore);
+  } else {
+      bStore = [];
+  }
+  const [basket, setBasket] = useState(bStore);
 
   useEffect(() => {
     window.addEventListener("resize", () => {
@@ -63,6 +70,10 @@ useEffect(() => {
   }, [token])
 
   useEffect(() => {
+    localStorage.setItem("rockBasket", JSON.stringify(basket));
+}, [basket])
+
+  useEffect(() => {
     setToken(localStorage.getItem("user-token"))
   }, [userId])
 
@@ -71,7 +82,9 @@ useEffect(() => {
     userId,
     setUserId,
     products,
-    setProducts
+    setProducts,
+    basket,
+    setBasket
    
   }
 

@@ -1,18 +1,25 @@
-import {useContext, useState} from "react";
+import {useContext, useEffect, useState} from "react";
 import Layout from "../Layout";
 import Logo from "../Logo";
 import Nav from "../Nav";
 import {Search} from "../Form";
 
-import MainCtx from "../../context/main"
+import Main from "../../context/main"
 
 import menu from "../../assets/data/menu.json";
 
 import "./index.css";
 
 const Header = () => {
-    const {screen} = useContext(MainCtx);
+    const {screen} = useContext(Main);
     const [showMenu, setShowMenu] = useState(false);
+    const [cartCnt, setCartCnt] = useState(0);
+    const {basket} = useContext(Main);
+
+    useEffect(() => {
+        setCartCnt(basket.reduce((acc, el) => acc + el.cnt, 0))
+    }, [basket])
+    
     return <header className="header">
         <Layout>
             <Logo/>
