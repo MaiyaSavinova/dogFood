@@ -36,14 +36,14 @@ console.log(products);
             <Layout dt={3}>
                   <Adds {...addsData[3]}></Adds>
             </Layout>
-            {newGoods.length > 0 && <Layout dt={2} title="Новинки">
+            {newGoods.length > 0 && <Layout mb={2} dt={4} title="Новинки">
                         {newGoods.map(el => <Card key={el._id} {...el}/>)}
             </Layout>}
             <Layout dt={2}>
                   <Adds {...addsData[2]}></Adds>
                   <Adds {...addsData[4]} />
             </Layout>
-                  {favGoods.length > 0 && <Layout dt={2} title="Популярные товары">
+                  {favGoods.length > 0 && <Layout mb={2} dt={4} title="Популярные товары">
                         {favGoods.map(el => <Card key={el._id} {...el}/>)}
             </Layout>}
             <Layout dt={2}>

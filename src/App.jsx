@@ -43,8 +43,15 @@ useEffect(() => {
   if (token) {
       api.getProducts()
           .then(data => {
-              console.log(data);            
-              setProducts(data.products);
+            //let changes = blackList.changeTags;
+            //let changesNames = Object.keys(changes);
+            const arr = data.products;
+            /*const result = utilsVal.filterPro(arr)
+            .byAuthor(blackList.authors, false)
+            .byTag(blackList.tags, false)
+            .byId(blackList.goods, false)
+            .data
+        setProducts(result);*/
           })
   } else {
       setProducts([]);

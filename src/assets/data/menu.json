@@ -21,7 +21,7 @@
             "path": "/products",
             "imgType": "icon",
             "imgPath": "lni lni-layers",
-            "visibility": "no-user", 
+            "visibility": "user", 
             "subLinks": [
                 {
                     "title": "Лакомства",
@@ -51,13 +51,13 @@
             "path": "/basket",
             "imgType": "icon",
             "imgPath": "lni lni-cart",
-            "visibility": "no-user"  
+            "visibility": "user"  
         },
         {
             "path": "/profile",
             "imgType": "icon",
             "imgPath": "lni lni-user",
-            "visibility": "no-user"  
+            "visibility": "user"  
         },
         {
             "title": "Войти",
@@ -76,17 +76,17 @@
           {
             "title": "Личный кабинет",
             "path": "/profile",
-            "visibility": "no-user"
+            "visibility": "user"
           },
           {
             "title": "Каталог",
             "path": "/products",
-            "visibility": "no-user"
+            "visibility": "user"
           },
           {
             "title": "Корзина",
             "path": "/basket",
-            "visibility": "no-user"
+            "visibility": "user"
           },
           {
             "title": "О магазине",
