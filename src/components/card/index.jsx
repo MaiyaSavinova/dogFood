@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Link, useNavigate, } from "react-router-dom"
 import "./index.css";
+import Main from "../../context/main";
 
 const Card = ({
     _id,
@@ -13,8 +14,22 @@ const Card = ({
     reviews
 
 }) => {
+    const { products, setProducts, setBasket, basket } = useContext(Main);
     const [isLike, setIsLike] = useState(likes.includes(3))
-    const [inBasket, setInBasket] = useState(false);
+    const [inBasket, setInBasket] = useState(basket.filter(el => el.id === _id).length > 0);
+
+    const addToCart = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        setInBasket(true);
+        setBasket(prev => [...prev, {
+            id: _id,
+            cnt: 1,
+            name: name,
+            img: pictures,
+            price: price
+        }])
+    }
     const navigate = useNavigate();
     const tag = tags[tags.length - 1]
     const imgStyle = {
@@ -47,13 +62,13 @@ const Card = ({
             <span className="card__info">
                 {reviews.length
                     ? <span className="card__rate">
-                        <i className="lni lni-star-fill"/>
+                        <i className="lni lni-star-fill" />
                         {(reviews.reduce((acc, el) => acc + el.rating, 0) /
-                        reviews.length).toFixed(1)}
+                            reviews.length).toFixed(1)}
                     </span>
                     : <span className="card__rate card__rate_empty">
-                     <i className="lni lni-star-fill" />
-                 </span>
+                        <i className="lni lni-star-fill" />
+                    </span>
                 }
                 <span className="card__review">
                     {reviews.length > 0
@@ -65,29 +80,22 @@ const Card = ({
 
             <span className="card__price"> {price} ₽</span>
             <span className="card__buttons">
-                {inBasket
-                    ? <button
-                        className="card__btn card__btn_basket"
-                        onClick={basketHandler}
-                    >
-                        <i className="lni lni-cart-full" />
-                        В корзине
-                    </button>
-                    : <button
-                        className="card__btn card__btn_basket"
-                        onClick={basketHandler}
-                    >
-                        <i className="lni lni-cart" />
-                        В корзину
-                    </button>
-                }
+
+                <button
+                    className="card__btn card__btn_basket"
+                    onClick={addToCart}
+                    disabled={inBasket}
+                >
+                    <i className="lni lni-cart" />
+                    В корзину</button>
+
                 <button
                     className="card__btn"
                     onClick={likeHandler}
                 >
                     {isLike
-                        ? <i className="lni lni-heart-fill"/>
-                        : <i className="lni lni-heart"/>
+                        ? <i className="lni lni-heart-fill" />
+                        : <i className="lni lni-heart" />
                     }
                 </button>
             </span>

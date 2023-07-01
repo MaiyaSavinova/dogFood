@@ -67,6 +67,10 @@
 .card button:hover {
    opacity: 1;
 }
+.card__btn:disabled {
+    opacity: .6;
+    cursor: default;
+}
 .card__buttons {
     display: flex;
     gap: 1rem;
