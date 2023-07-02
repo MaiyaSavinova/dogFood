@@ -65,6 +65,22 @@ useEffect(() => {
   }
 }, [api])
 
+
+useEffect(() => {
+  if (token) {
+      fetch("https://api.react-learning.ru/products", {
+          headers: {
+              "Authorization": `Bearer ${token}`
+          }
+      })
+          .then(res => res.json())
+          .then(data => {
+              console.log(data);
+              setProducts(data.products);
+          })
+  }
+}, [token])
+
   useEffect(() => {
     setApi(new Api(token))
   }, [token])
