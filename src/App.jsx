@@ -100,7 +100,8 @@ useEffect(() => {
     products,
     setProducts,
     basket,
-    setBasket
+    setBasket,
+    token
    
   }
 
